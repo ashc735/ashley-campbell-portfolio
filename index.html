@@ -25,6 +25,7 @@
 
   <!-- Add your site or application content here -->
   <script src="js/app.js"></script>
+  <!--Header section with Nav links-->
   <header>
     <div class ="content-wrapper">
       <h1> Ashley<span> Campbell</span></h1>
@@ -46,6 +47,7 @@
     </div>
 </header>
 <main>
+  <!--About Section-->
   <article class="portfolio">
     <section id="about">
       <div class="content-wrapper">
@@ -62,6 +64,7 @@
         </p>
       </div>
     </section>
+    <!--Skills Section-->
     <section id="skills">
       <div class="content-wrapper">
         <h2 class="skills-header">Skills</h2>
@@ -86,26 +89,92 @@
         </ul>
       </div>
     </section>
+    <!--Projects Section-->
     <section id="projects">
       <div class="content-wrapper">
-        <h2 class="portfolio-header">Projects</h2> 
+        <h2 class="portfolio-header">Projects</h2>
+      <div class="portfolio-wrapper">
+        <!--Rogue Pickings Project-->
+        <div class="home-portfolio-piece">
+          <figure>
+            <a href="https://ashc735.github.io/cr-rogue-pickings-project/"target="_blank">
+              <img src="img/rogue-pickings.png" alt="Rogue Pickings Project">
+            </a>
+          </figure>
+          <h3> Rogue Pickings</h3>
+            <p class="project-description">
+              "This is a simple homepage for a food truck or restaurant pop-up. 
+              Originally static, I converted it to a responsive design via Flexbox."
+            </p>
+            <p><span>Skills:</span> HTML5, CSS3, Flexbox</p>
+            <p class="flex-fill"><span>Tools:</span> Chrome DevTools and Github</p>
+            <a class="project-link" href="https://ashc735.github.io/cr-rogue-pickings-project/"target="_blank">live page</a>
+        </div>
+        <!--Guess the Word Game Project-->
+        <div class="home-portfolio-piece">
+          <figure>
+            <a href="https://ashc735.github.io/guess-the-word-main/"target="_blank">
+              <img src="img/guess-the-word.png" alt="Guess the Word Game">
+            </a>
+          </figure>
+          <h3> Guess the Word Game</h3>
+            <p class="project-description">
+              "This project utilized JavaScript to create an interactive word game. 
+              Users guess the word one letter at a time within a  certain number of allotted guesses."
+            </p>
+            <p><span>Skills:</span> JavaScript</p>
+            <p class="flex-fill"><span>Tools:</span> Github</p>
+            <a class="project-link" href="https://ashc735.github.io/guess-the-word-main/"target="_blank">live page</a>
+        </div>
+        <!--Repo Gallery Project-->
+        <div class="home-portfolio-piece">
+          <figure>
+            <a href="https://ashc735.github.io/repo-gallery-project/"target="_blank">
+              <img src="img/repo-gallery.png" alt="Github Repo Gallery">
+            </a>
+          </figure>
+          <h3> Github Repo Gallery</h3>
+            <p class="project-description">
+              "This project created a Github Repo Gallery by employing GitHub’s API to pull data from my Github portfolio. 
+              Users can click on the repo to see more details or visit the link directly to that repo."
+            </p>
+            <p><span>Skills:</span> JavaScript & Rest API</p>
+            <p class="flex-fill"><span>Tools:</span> Github Pages</p>
+            <a class="project-link" href="https://ashc735.github.io/repo-gallery-project/"target="_blank">live page</a>
+        </div>
+        <!--Sticky Notes Project-->
+        <div class="home-portfolio-piece">
+          <figure>
+            <a href="https://f6cndv.csb.app/"target="_blank">
+              <img src="img/sticky-notes.png" alt="Sticky Notes">
+            </a>
+          </figure>
+          <h3> Sticky Notes Project</h3>
+            <p class="project-description">
+              "Project uses React to create an interactive Sticky Notes UI. 
+              Users can create, edit, search, and delete notes."
+            </p>
+            <p><span>Skills:</span> JSX, Components, React</p>
+            <p class="flex-fill"><span>Tools:</span> Code Sandbox</p>
+            <a class="project-link" href="https://f6cndv.csb.app/"target="_blank">live page</a>
+        </div>
+
       </div>
     </section>
+    <!--Contact Section-->
     <footer id="contact">
       <div class="content-wrapper">
         <h2>Let's Connect</h2>
         <div class="contact-wrapper">
           <div class="contact-info">
             <h4 class="contact-title">Hire Me</h4>
-            <p>campbell.ashley735@gmail.com</p>
+            <p>Send me an <a href="mailto:campbell.ashley735@gmail.com"> email!</a></p>
         </div>
         <div class="contact-info follow-section">
           <h4 class="contact-title">Follow Me</h4>
-          <ul class="social icons">
+          <i class="social icons">
             <li>
-              <a href="https://www.linkedin.com/in/ashleycampbell735/"target="_blank">
-                <i class="fab fa-linkedin-in">
-                </i>
+              <a href="https://www.linkedin.com/in/ashleycampbell735/"target="_blank"><img src="img/linkedin.png" alt="LinkedIn Icon">
                 </a>
               </li>
               <li>
@@ -114,7 +183,7 @@
                   </i>
                 </a>
               </li>
-          </ul>
+            </i>
         </div>
       </div>
     </footer>
