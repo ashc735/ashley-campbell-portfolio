@@ -84,6 +84,38 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*General Styles*/
+
+html { 
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'Lekton',sans-serif;
+  font-size: 1em;
+  color: #152A3E;
+  background-color: #EEEFDA;
+  text-align: left;
+}
+
+h2 {
+  font-family: 'Lexend Tera', sans-serif;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Lekton', sans-serif;
+  margin: 0;
+}
+
+/*Header Styles*/
+
+header {
+  
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
