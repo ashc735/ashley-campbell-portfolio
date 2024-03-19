@@ -131,7 +131,7 @@ header nav #contact-link {
 
 header .home-title {
   font-family: 'Lexend Tera', sans-serif;
-  color: #EEEFDA;
+  color: #F7E8E8;
   text-decoration: none;
 }
 
@@ -212,6 +212,7 @@ header .home-title h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #f0f0f0;
 }
 
 .skills .content-wrapper {
@@ -225,6 +226,7 @@ header .home-title h2 {
   display: flex;
   flex-direction: column;
   text-align: center;
+  color: #EEEFDA;
 }
 
 .skills .content-wrapper ul {
@@ -251,9 +253,241 @@ header .home-title h2 {
   margin: 5px 5px;
 }
 
+.tools {
+  font-family: 'Lexend Tera', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.tools h3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #EEEFDA;
+}
+
+.tools ul {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-flow: column wrap;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.tools li {
+  display: flex;
+  flex-flow: column wrap-reverse;
+  align-content: center;
+  color: #152A3E;
+  width: 25%;
+  text-decoration: none;
+  text-align: center;
+  background: #B4C7D9;
+  border-radius: 30%;
+  padding: 10px 10px;
+  margin: 5px 5px;
+}
+
 /*Projects Styles*/
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  background: #F7E8E8;
+  color: #152A3E;
+  font-family: 'Lekton', sans-serif;
+}
+
+.projects .content-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.projects .portfolio-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .content-wrapper h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.home-portfolio-piece {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.home-portfolio-piece figure {
+  filter: drop-shadow(1px 2px 6px lightgrey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.home-portfolio-piece figure a {
+  display: flex;
+  flex-direction: column wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.home-portfolio-piece img {
+  display:flex;
+  align-content: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.home-portfolio-piece h3 {
+  text-align: center;
+}
+
+.project-description {
+  text-align: center;
+  line-height: 1px;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 5px 5px;
+}
+
+span {
+  font-weight: bolder;
+}
+
+.p .flex-fill {
+  flex-grow: 1;
+}
+
+.project-link {
+  display: flex;
+  flex-flow: column wrap;
+  justify-self: center;
+  align-self: center;
+  background-color: #453E4F;
+  padding: .75rem 3.75rem;
+  border-radius: 30px;
+  color: #FFFFFF;
+  margin: 40px 0 60px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  width: 15%;
+}
+
+.project-link:hover {
+  background-color: #CAC4D1;
+  color: #453E4F;
+}
+
 /*Contact Styles*/
+
+footer { 
+  background: #f0f0f0;
+}
+
+footer #contact {
+  display: flex;
+  flex-flow: column wrap;
+  color: #152A3E;
+}
+
+footer .content-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+footer .content-wrapper h2 {
+  font-family: 'Lexend Tera', sans-serif;
+  text-align: center;
+  color:#152A3E;
+  background: #f0f0f0;
+}
+
+.contact-info {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;;
+  align-items: center;
+}
+
+.contact-title {
+  font-family: 'Lexend Tera', sans-serif;
+  text-align: center;
+  color:#152A3E;
+}
+
+.contact-info p {
+  font-family: 'Lekton', sans-serif;
+  text-align: center;
+  color:#152A3E;
+  font-size: 1em;
+}
+
+.contact-info a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info follow-section {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.social-icons {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+.social-icons ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.social-icons li {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-content: center;
+ width: 30px;
+ height: 30px;
+}
+
+.social-icons li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+
 
 
 
