@@ -172,12 +172,17 @@ header .home-title h2 {
 
 .about .biography {
   display: flex;
-  flex-flow: row wrap;
-  width: 100%;
+  align-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .about .biography figure {
   width: 45%;
+  display: flex;
+  align-self: center;
+  justify-self: center;
 }
 
 .about .biography figure img {
@@ -188,8 +193,12 @@ header .home-title h2 {
 }
 
 .about .biography h3 {
-  display: flex;
-  flex-direction:row;
+  text-align: center;
+}
+
+.about .biography p {
+  text-align: center;
+  margin: 15px;
 }
 
 /*Skills Styles*/
