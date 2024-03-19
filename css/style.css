@@ -203,6 +203,54 @@ header .home-title h2 {
 
 /*Skills Styles*/
 
+.skills {
+  font-family: 'Lexend Tera', sans-serif;
+  color: #EEEFDA;
+}
+
+.skills .skills-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.skills .content-wrapper h3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skills .content-wrapper ul {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-flow: column wrap;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.skills .content-wrapper li {
+  display: flex;
+  flex-flow: column wrap-reverse;
+  align-content: center;
+  color: #152A3E;
+  width: 25%;
+  text-decoration: none;
+  text-align: center;
+  background: #B4C7D9;
+  border-radius: 30%;
+  padding: 10px 10px;
+  margin: 5px 5px;
+}
+
 /*Projects Styles*/
 
 /*Contact Styles*/
