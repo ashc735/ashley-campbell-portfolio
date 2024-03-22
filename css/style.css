@@ -10,6 +10,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+   @charset "UTF-8";
 
 html {
   color: #222;
@@ -99,21 +100,25 @@ header {
 
 header .content-wrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
 header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Lekton', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  width: 40%;
-  margin: 20px 15px;
+  width: 100%;
+  margin: 25px 20px;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   
 }
@@ -144,6 +149,8 @@ header .home-title {
   font-family: 'Lexend Tera', sans-serif;
   color: #F7E8E8;
   text-decoration: none;
+  overflow: auto;
+  margin: 10px 5px;
 }
 
 header .home-title h1 {
@@ -168,17 +175,24 @@ header .home-title h2 {
   background: #E7E5CB;
   color: #152A3E;
   font-family: 'Lekton', sans-serif;
+  overflow: auto;
+  margin: 25px 15px;
+  width: 100%;
 }
 
 .about .content-wrapper {
   display: flex;
   flex-flow: column wrap;
+  width: 100%;
+  overflow: auto;
 }
 
 .about .content-wrapper h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .about .biography {
@@ -205,11 +219,13 @@ header .home-title h2 {
 
 .about .biography h3 {
   text-align: center;
+  font-size: 1.375rem;
 }
 
 .about .biography p {
   text-align: center;
   margin: 15px;
+  font-size: 1.25rem;
 }
 
 /*Skills Styles*/
@@ -255,13 +271,14 @@ header .home-title h2 {
   flex-flow: column wrap-reverse;
   align-content: center;
   color: #152A3E;
-  width: 25%;
+  width: 45%;
   text-decoration: none;
   text-align: center;
   background: #B4C7D9;
-  border-radius: 30%;
-  padding: 10px 10px;
-  margin: 5px 5px;
+  border-radius: 0;
+  padding: 5px 5px;
+  margin: 10px 0;
+  overflow:auto;
 }
 
 .tools {
@@ -294,11 +311,11 @@ header .home-title h2 {
   flex-flow: column wrap-reverse;
   align-content: center;
   color: #152A3E;
-  width: 25%;
+  width: 45%;
   text-decoration: none;
   text-align: center;
   background: #B4C7D9;
-  border-radius: 30%;
+  border-radius: 0;
   padding: 10px 10px;
   margin: 5px 5px;
 }
@@ -372,7 +389,7 @@ header .home-title h2 {
 
 .project-description {
   text-align: center;
-  line-height: 1px;
+  line-height: 1.5rem;
   margin-bottom: 10px;
 }
 
@@ -382,6 +399,7 @@ p {
   flex-flow: column wrap;
   align-content: center;
   justify-content: center;
+  font-size: 1.25rem;
   margin: 5px 5px;
 }
 
@@ -396,18 +414,17 @@ span {
 .project-link {
   display: flex;
   flex-flow: column wrap;
-  justify-self: center;
   align-self: center;
   background-color: #453E4F;
-  padding: .75rem 3.75rem;
-  border-radius: 30px;
+  border-radius: 27px;
   color: #FFFFFF;
-  margin: 40px 0 60px 0;
+  width: 25%;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  width: 15%;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .project-link:hover {
@@ -478,7 +495,7 @@ footer .content-wrapper h2 {
 .social-icons ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-content: center;
 }
 
@@ -497,14 +514,6 @@ footer .content-wrapper h2 {
   justify-content: center;
   align-content: center;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -593,9 +602,137 @@ footer .content-wrapper h2 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   /***** Tablet Styles *****/
+
+@media only screen and (min-width: 768px) {
+  
+  /* Header styles */
+
+  header nav { 
+    font-size: 1.55rem;
+  }
+
+  header nav ul {
+    font-size: 1.55rem;
+  }
+
+  .home-title h1 {
+    font-size: 2em;
+  }
+  
+  .home-title h2 {
+    overflow: auto;
+    margin: 10px 10px;
+    font-size: 1.5rem;
+  }
+/* About Styles */
+
+.about h2 {
+  font-size: 1.5rem;
 }
+
+/*Skills Styles*/
+
+.skills {
+  text-decoration: none;
+}
+
+.skills .skills-header {
+  text-align: center;
+}
+
+.skills .content-wrapper ul{
+  flex-direction: row;
+}
+.tools ul {
+  flex-direction: row;
+  margin: 10px 10px;
+}
+
+/*Projects Styles*/
+
+.projects h2 {
+  font-size: 1.5rem;
+}
+
+.projects .portfolio-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: auto;
+}
+.portfolio-wrapper .home-portfolio-piece {
+  max-width: 512px;
+  overflow: auto;
+  margin: 0 5px;
+}
+}
+
+/***** Desktop Styles *****/
+
+@media only screen and (min-width: 1200px) {
+
+/*Header Styles*/
+
+header .content-wrapper {
+  display:flex;
+  justify-content: flex-end;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 45%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  padding: 10px 10px;
+}
+
+
+
+/*Skills Styles*/
+
+.tools ul {
+  flex-direction: row;
+  margin: 15px 10px;
+}
+  
+
+  /*Projects Styles*/
+
+.projects h2 {
+    font-size: 1.5rem;
+  }
+
+.projects .portfolio-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  overflow: none;
+}
+.portfolio-wrapper .home-portfolio-piece {
+  max-width: 600px;
+  overflow: none;
+  margin: 15px 10px;
+}
+
+.home-portfolio-piece img {
+  width: 80%;
+  height: 70%; 
+}
+
+.home-portfolio-piece h3 {
+  font-size: 1.33rem;
+  
+}
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
