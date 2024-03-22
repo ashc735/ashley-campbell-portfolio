@@ -108,6 +108,7 @@ header nav {
   text-transform: uppercase;
   font-weight: bold;
   width: 40%;
+  margin: 20px 15px;
 }
 
 header nav ul {
@@ -122,11 +123,21 @@ header nav ul li a {
   text-decoration: none;
 }
 
+header nav ul li a:hover {
+  background: #CAC691;
+  padding: 10px 10px;
+  border-radius: 30px;
+}
+
 header nav #contact-link {
   background-color: #CAC691;
   color:#152A3E;
   padding: 10px 10px;
   border-radius: 30px;
+}
+
+header nav #contact-link:hover {
+  background: #E7E5CB;
 }
 
 header .home-title {
@@ -205,7 +216,7 @@ header .home-title h2 {
 
 .skills {
   font-family: 'Lexend Tera', sans-serif;
-  color: #EEEFDA;
+  color: #F7E8E8;
 }
 
 .skills .skills-header {
@@ -468,6 +479,7 @@ footer .content-wrapper h2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-content: center;
 }
 
 .social-icons li {
@@ -483,6 +495,7 @@ footer .content-wrapper h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-content: center;
 }
 
 
