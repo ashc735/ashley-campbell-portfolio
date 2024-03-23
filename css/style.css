@@ -87,6 +87,7 @@ textarea {
 
 body {
   background-color: #152A3E;
+  background-size: cover;
   border: none;
   margin: 0;
   padding: 0;
@@ -102,6 +103,7 @@ header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 header nav {
@@ -112,20 +114,20 @@ header nav {
   text-transform: uppercase;
   font-weight: bold;
   width: 100%;
-  margin: 25px 20px;
+  margin-bottom: 60px;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  
+  width: 100%; 
+  list-style-type: none;
 }
 
 header nav ul li a {
   color:#EEEFDA;
-  text-decoration: none;
+  text-decoration:none;
 }
 
 header nav ul li a:hover {
@@ -173,10 +175,9 @@ header .home-title h2 {
 
 .about {
   background: #E7E5CB;
+  background-size: cover;
   color: #152A3E;
   font-family: 'Lekton', sans-serif;
-  overflow: auto;
-  margin: 25px 15px;
   width: 100%;
 }
 
@@ -184,7 +185,7 @@ header .home-title h2 {
   display: flex;
   flex-flow: column wrap;
   width: 100%;
-  overflow: auto;
+  margin: 25px 15px;
 }
 
 .about .content-wrapper h2 {
@@ -193,6 +194,7 @@ header .home-title h2 {
   align-items: center;
   text-align: center;
   font-size: 1.5rem;
+  margin: 25px 15px;
 }
 
 .about .biography {
@@ -231,6 +233,10 @@ header .home-title h2 {
 /*Skills Styles*/
 
 .skills {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
   font-family: 'Lexend Tera', sans-serif;
   color: #F7E8E8;
 }
@@ -238,47 +244,38 @@ header .home-title h2 {
 .skills .skills-header {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   color: #f0f0f0;
 }
 
 .skills .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   text-decoration: none;
 }
 
-.skills .content-wrapper h3 {
+.skills h3 {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   text-align: center;
   color: #EEEFDA;
 }
 
-.skills .content-wrapper ul {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  flex-flow: column wrap;
+.skills ul {
   text-transform: uppercase;
+  text-align: center;
   text-decoration: none;
   font-weight: 300;
+  position: center;
 }
 
-.skills .content-wrapper li {
+.skills li {
   display: flex;
-  flex-flow: column wrap-reverse;
-  align-content: center;
+  justify-content: center;
   color: #152A3E;
-  width: 45%;
   text-decoration: none;
-  text-align: center;
   background: #B4C7D9;
-  border-radius: 0;
+  border: solid black;
   padding: 5px 5px;
-  margin: 10px 0;
-  overflow:auto;
+  margin: 5px 5px;
 }
 
 .tools {
@@ -291,34 +288,29 @@ header .home-title h2 {
 
 .tools h3 {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   text-align: center;
   color: #EEEFDA;
 }
 
 .tools ul {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  flex-flow: column wrap;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   font-weight: 300;
+  position: center;
 }
 
+
 .tools li {
-  display: flex;
-  flex-flow: column wrap-reverse;
-  align-content: center;
   color: #152A3E;
-  width: 45%;
   text-decoration: none;
-  text-align: center;
   background: #B4C7D9;
-  border-radius: 0;
-  padding: 10px 10px;
+  border: solid black;
+  padding: 5px 5px;
   margin: 5px 5px;
 }
+
 
 /*Projects Styles*/
 
@@ -326,6 +318,8 @@ header .home-title h2 {
   display: flex;
   flex-direction: column;
   background: #F7E8E8;
+  background-size: cover;
+  width: 100%;
   color: #152A3E;
   font-family: 'Lekton', sans-serif;
 }
@@ -436,20 +430,22 @@ span {
 
 footer { 
   background: #f0f0f0;
+  background-size: cover;
+  width: 100%;
 }
 
 footer #contact {
-  display: flex;
-  flex-flow: column wrap;
   color: #152A3E;
 }
 
 footer .content-wrapper {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-footer .content-wrapper h2 {
+footer h2 {
   font-family: 'Lexend Tera', sans-serif;
   text-align: center;
   color:#152A3E;
@@ -457,10 +453,8 @@ footer .content-wrapper h2 {
 }
 
 .contact-info {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;;
-  align-items: center;
+  width: 100%%;
+  text-align: center; 
 }
 
 .contact-title {
@@ -473,46 +467,56 @@ footer .content-wrapper h2 {
   font-family: 'Lekton', sans-serif;
   text-align: center;
   color:#152A3E;
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 .contact-info a {
   text-decoration: none;
   font-weight: bold;
+  font-size: .75em;
 }
 
-.contact-info follow-section {
+.contact-follow {
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
 }
 
 .social-icons {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .social-icons ul {
+  width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-content: center;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.social-icons li {
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-content: center;
- width: 30px;
- height: 30px;
+.social-icons ul li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 15px;
 }
 
-.social-icons li a {
+.social-icons a {
+  width: 40px;
+  height: 40px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-content: center;
+}
+
+footer p {
+  font-family: 'Lekton', sans-serif;
+  text-align: center;
+  color:#152A3E;
+  font-size: 1.25em;
 }
 
 
@@ -634,6 +638,10 @@ footer .content-wrapper h2 {
 /*Skills Styles*/
 
 .skills {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: column wrap;
   text-decoration: none;
 }
 
@@ -665,6 +673,16 @@ footer .content-wrapper h2 {
   overflow: auto;
   margin: 0 5px;
 }
+
+/*Footer Styles*/
+
+footer .content-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 }
 
 /***** Desktop Styles *****/
@@ -689,8 +707,11 @@ header nav ul {
   justify-content: flex-end;
 }
 
-header nav ul li a {
+header nav ul li {
   text-decoration: none;
+}
+
+header nav ul li a {
   padding: 10px 10px;
 }
 
@@ -698,10 +719,16 @@ header nav ul li a {
 
 /*Skills Styles*/
 
+.skills ul {
+  list-style-type: none;
+}
 .tools ul {
   flex-direction: row;
   margin: 15px 10px;
+  list-style-type: none;
 }
+
+
   
 
   /*Projects Styles*/
