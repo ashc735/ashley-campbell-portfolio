@@ -169,9 +169,15 @@
       <div class="content-wrapper">
         <h2>Let's Connect</h2>
         <div class="contact-wrapper">
-          <div class="contact-info">
-            <h4 class="contact-title">Hire Me</h4>
-            <p>Send me an <a href="mailto:campbell.ashley735@gmail.com"> email!</a></p>
+          <div class="contact-container">
+            <form action="https://formsubmit.co/campbell.ashley735@gmail.com" method="POST" class="contact-form">
+              <h4 class="contact-title">Get in Touch</h4>
+              </div>
+              <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+              <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+              <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+              <button type="submit">Submit</button>
+            </form> 
         </div>
         <div class="contact-follow">
           <h4 class="contact-title">Follow Me</h4>
@@ -190,7 +196,7 @@
         </div>
       </div>
       <p>
-        Copyright 2024 | Ashley Campbell
+        &copy<span id="currentYear">2024</span>| Ashley Campbell
       </p>
     </footer>
 </main>
