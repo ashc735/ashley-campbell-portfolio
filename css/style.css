@@ -457,7 +457,16 @@ footer h2 {
 }
 
 .contact-container {
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  width: 90%;
+  display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
