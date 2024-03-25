@@ -314,7 +314,7 @@ header .home-title h2 {
 
 #projects {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   background: #F7E8E8;
   background-size: cover;
   width: 100%;
@@ -343,7 +343,7 @@ header .home-title h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
 }
 
 .home-portfolio-piece {
@@ -475,6 +475,7 @@ footer h2 {
   width: 100%;
   text-align: center;
   font-family: 'Lekton', sans-serif;
+  font-size: 18px;
   background: #f0f0f0;
   border:#152A3E solid 2px;
   border-radius: 4px;
@@ -511,6 +512,8 @@ button {
   justify-content: center;
   background-color: #152A3E;
   border: none;
+  font-family: 'Lekton', sans-serif;
+  font-size: 18px;
   color: white;
   text-align: center;
   padding: 16px 32px;
