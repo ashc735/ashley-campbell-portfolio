@@ -249,12 +249,13 @@ header .home-title h2 {
 }
 
 .skills .content-wrapper {
-  text-decoration: none;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills h3 {
-  display: flex;
-  justify-content: center;
   text-align: center;
   color: #EEEFDA;
 }
@@ -268,8 +269,6 @@ header .home-title h2 {
 }
 
 .skills li {
-  display: flex;
-  justify-content: center;
   color: #152A3E;
   text-decoration: none;
   background: #B4C7D9;
@@ -281,14 +280,13 @@ header .home-title h2 {
 .tools {
   font-family: 'Lexend Tera', sans-serif;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
 }
 
 .tools h3 {
-  display: flex;
-  justify-content: center;
   text-align: center;
   color: #EEEFDA;
 }
@@ -452,23 +450,22 @@ footer h2 {
   background: #f0f0f0;
 }
 
-.contact-info {
-  width: 100%%;
-  text-align: center; 
-}
-
 .contact-title {
   font-family: 'Lexend Tera', sans-serif;
   text-align: center;
   color:#152A3E;
 }
 
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact-inputs {
   width: 100%;
   text-align: center;
   font-family: 'Lekton', sans-serif;
-  display: flex;
-  flex-flow: column wrap;
   background: #f0f0f0;
   border:#152A3E solid 2px;
   border-radius: 4px;
