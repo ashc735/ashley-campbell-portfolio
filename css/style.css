@@ -125,7 +125,7 @@ header nav ul {
   list-style-type: none;
 }
 
-header nav ul li a {
+header nav ul li a{
   color:#EEEFDA;
   text-decoration:none;
 }
@@ -173,7 +173,7 @@ header .home-title h2 {
 
 /*About Me Styles*/
 
-.about {
+#about {
   background: #E7E5CB;
   background-size: cover;
   color: #152A3E;
@@ -181,14 +181,14 @@ header .home-title h2 {
   width: 100%;
 }
 
-.about .content-wrapper {
+#about .content-wrapper {
   display: flex;
   flex-flow: column wrap;
   width: 100%;
   margin: 25px 15px;
 }
 
-.about .content-wrapper h2 {
+#about .content-wrapper h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,7 +197,7 @@ header .home-title h2 {
   margin: 25px 15px;
 }
 
-.about .biography {
+#about .biography {
   display: flex;
   align-content: space-between;
   flex-direction: column;
@@ -205,26 +205,26 @@ header .home-title h2 {
   flex-wrap: wrap;
 }
 
-.about .biography figure {
+#about .biography figure {
   width: 45%;
   display: flex;
   align-self: center;
   justify-self: center;
 }
 
-.about .biography figure img {
+#about .biography figure img {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
   border: solid #152A3E;
 }
 
-.about .biography h3 {
+#about .biography h3 {
   text-align: center;
   font-size: 1.375rem;
 }
 
-.about .biography p {
+#about .biography p {
   text-align: center;
   margin: 15px;
   font-size: 1.25rem;
@@ -232,35 +232,36 @@ header .home-title h2 {
 
 /*Skills Styles*/
 
-.skills {
+#skills {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   font-family: 'Lexend Tera', sans-serif;
   color: #F7E8E8;
 }
 
-.skills .skills-header {
+#skills .skills-header {
   display: flex;
   justify-content: center;
   text-align: center;
   color: #f0f0f0;
 }
 
-.skills .content-wrapper {
+#skills .content-wrapper {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
 
-.skills h3 {
+#skills h3 {
   text-align: center;
   color: #EEEFDA;
 }
 
-.skills ul {
+#skills ul {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
@@ -268,7 +269,7 @@ header .home-title h2 {
   position: center;
 }
 
-.skills li {
+#skills li {
   color: #152A3E;
   text-decoration: none;
   background: #B4C7D9;
@@ -277,7 +278,7 @@ header .home-title h2 {
   margin: 5px 5px;
 }
 
-.tools {
+#skills .tools {
   font-family: 'Lexend Tera', sans-serif;
   display: flex;
   flex-flow: column wrap;
@@ -286,12 +287,12 @@ header .home-title h2 {
   text-decoration: none;
 }
 
-.tools h3 {
+#skills .tools h3 {
   text-align: center;
   color: #EEEFDA;
 }
 
-.tools ul {
+#skills .tools ul {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -299,8 +300,7 @@ header .home-title h2 {
   position: center;
 }
 
-
-.tools li {
+#skills .tools li {
   color: #152A3E;
   text-decoration: none;
   background: #B4C7D9;
@@ -312,7 +312,7 @@ header .home-title h2 {
 
 /*Projects Styles*/
 
-.projects {
+#projects {
   display: flex;
   flex-direction: column;
   background: #F7E8E8;
@@ -322,18 +322,18 @@ header .home-title h2 {
   font-family: 'Lekton', sans-serif;
 }
 
-.projects .content-wrapper {
+#projects .content-wrapper {
   display: flex;
   flex-flow: column wrap;
 }
 
-.projects .portfolio-header {
+#projects .portfolio-header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.projects .content-wrapper h2 {
+#projects .content-wrapper h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,7 +509,7 @@ button {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  background-color: #04AA6D;
+  background-color: #152A3E;
   border: none;
   color: white;
   text-align: center;
