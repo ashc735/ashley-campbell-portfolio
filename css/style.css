@@ -48,7 +48,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1em 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -688,33 +688,6 @@ footer p {
   font-size: 1.5rem;
 }
 
-#about .biography {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-#about .biography figure {
-  width: 45%;
-}
-
-#about .biography figure img {
-  width: 100%;
-  border: solid #152A3E;
-}
-
-#about .biography h3 {
-  text-align: center;
-  font-size: 1.375rem;
-}
-
-#about .biography p {
-  text-align: left;
-  margin: 15px;
-  font-size: 1.25rem;
-}
-
-
-
 /*Skills Styles*/
 
 .skills {
@@ -799,12 +772,7 @@ header nav ul li a {
 
 /*About Styles*/
 
-#about .biography {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-}
+
 
 /*Skills Styles*/
 
