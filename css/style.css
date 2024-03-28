@@ -214,7 +214,6 @@ header .home-title h2 {
 
 #about .biography figure img {
   width: 100%;
-  border: solid #152A3E;
 }
 
 #about .biography h3 {
@@ -767,9 +766,8 @@ header nav ul li a {
 
 #about .biography {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
-  align-content: stretch;
+  flex-direction: row;
 }
 
 #about .biography figure {
@@ -777,18 +775,12 @@ header nav ul li a {
 }
 
 #about .biography h3 {
-  display: flex;
-  align-self: start;
-  justify-self: start;
   text-align: left;
   width: 49%;
 }
 
 #about .biography p {
   width: 49%;
-  display: flex;
-  align-self: center;
-  justify-self: center;
 }
 
 /*Skills Styles*/
