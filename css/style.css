@@ -227,7 +227,7 @@ header .home-title h2 {
   font-size: 1.25rem;
 }
 
-#about span {
+#about .bio-content {
   text-align: center;
 }
 
@@ -767,20 +767,33 @@ header nav ul li a {
 #about .biography {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-flow: row nowrap;
 }
 
 #about .biography figure {
-  width: 49%;
+  width: 95%;
 }
 
-#about .biography h3 {
-  text-align: left;
-  width: 49%;
+#about .bio-content {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
 }
 
-#about .biography p {
-  width: 49%;
+#about .bio-content h3 {
+  text-align: center;
+  width: 92%;
+}
+
+#about .bio-content p {
+  width: 90%;
+  text-align: justify;
+}
+
+#about span {
+  text-align: center;
+  font-size: 1.25rem;
 }
 
 /*Skills Styles*/
