@@ -189,15 +189,13 @@ header .home-title h2 {
 
 #about .content-wrapper {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   margin: 25px 15px;
 }
 
 #about .content-wrapper h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   font-size: 1.5rem;
   margin: 25px 15px;
@@ -205,21 +203,16 @@ header .home-title h2 {
 
 #about .biography {
   display: flex;
-  align-content: space-between;
-  flex-flow: column wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 #about .biography figure {
   width: 45%;
-  display: flex;
-  align-self: center;
-  justify-self: center;
 }
 
 #about .biography figure img {
-  display: flex;
-  flex-flow: row wrap;
   width: 100%;
   border: solid #152A3E;
 }
@@ -772,7 +765,31 @@ header nav ul li a {
 
 /*About Styles*/
 
+#about .biography {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+}
 
+#about .biography figure {
+  width: 49%;
+}
+
+#about .biography h3 {
+  display: flex;
+  align-self: start;
+  justify-self: start;
+  text-align: left;
+  width: 49%;
+}
+
+#about .biography p {
+  width: 49%;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
 
 /*Skills Styles*/
 
