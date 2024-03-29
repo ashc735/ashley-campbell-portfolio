@@ -961,6 +961,13 @@ footer .content-wrapper {
 
 footer .contact-container {
   min-width: 1200px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.contact-container h3 {
+  font-size: 1.33rem;
+  font-family: 'Lora', sans-serif;
 }
 
 .contact-container form {
