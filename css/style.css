@@ -316,6 +316,7 @@ header .home-title h2 {
 #projects {
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
   background: #F7E8E8;
   background-size: cover;
   width: 100%;
@@ -323,51 +324,28 @@ header .home-title h2 {
   font-family: 'Lekton', sans-serif;
 }
 
-#projects .content-wrapper {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-#projects .portfolio-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.portfolio-header {
+  text-align: center;
 }
 
 .portfolio-wrapper {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .home-portfolio-piece {
   display: flex;
-  flex-flow: column wrap;
-  align-content: center;
+  flex-flow: column;
   justify-content: center;
 }
 
 .home-portfolio-piece figure {
   filter: drop-shadow(1px 2px 6px lightgrey);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.home-portfolio-piece figure a {
-  display: flex;
-  flex-direction: column wrap;
-  align-content: center;
-  justify-content: center;
 }
 
 .home-portfolio-piece img {
-  display:flex;
-  align-content: center;
-  justify-content: center;
-  width: 80%;
+  width: 90%;
 }
 
 .home-portfolio-piece h3 {
@@ -381,13 +359,9 @@ header .home-title h2 {
 }
 
 p {
-  text-align: center;
-  display: flex;
-  flex-flow: column wrap;
-  align-content: center;
-  justify-content: center;
+  text-align: left;
   font-size: 1.25rem;
-  margin: 5px 5px;
+  margin: 10px 10px;
 }
 
 span {
@@ -736,11 +710,11 @@ footer p {
 
 /*Projects Styles*/
 
-.projects h2 {
+#projects h2 {
   font-size: 1.5rem;
 }
 
-.projects .portfolio-wrapper {
+#projects .portfolio-wrapper {
   display: flex;
   flex-flow: row wrap;
   overflow: auto;
@@ -825,6 +799,7 @@ header nav ul li a {
 #about .bio-content p {
   width: 90%;
   text-align: justify;
+  word-spacing: normal;
 }
 
 #about span {
@@ -850,11 +825,11 @@ header nav ul li a {
 
   /*Projects Styles*/
 
-.projects h2 {
+#projects h2 {
     font-size: 1.75rem;
   }
 
-.projects .portfolio-wrapper {
+#projects .portfolio-wrapper {
   display: flex;
   flex-flow: row wrap;
   overflow: none;
