@@ -951,6 +951,10 @@ footer {
   min-width: 1200px;
 }
 
+footer h2 {
+  font-size: 1.75rem;
+}
+
 footer .content-wrapper {
   min-width: 1200px;
 }
@@ -968,7 +972,8 @@ fieldset {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 75%;
+  padding: 5px 5px;
 }
 
 input[type=text] {
@@ -990,6 +995,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.33rem;
 }
 
 
