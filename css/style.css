@@ -185,6 +185,7 @@ header .home-title h2 {
   color: #152A3E;
   font-family: 'Lekton', sans-serif;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 #about .content-wrapper {
@@ -262,20 +263,22 @@ header .home-title h2 {
   color: #EEEFDA;
 }
 
-#skills ul {
+.dev-skills ul {
   text-transform: uppercase;
-  text-align: center;
   text-decoration: none;
   font-weight: 300;
-  position: center;
 }
 
-#skills li {
+.dev-skills li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #152A3E;
   text-decoration: none;
   background: #B4C7D9;
   border: solid black;
-  padding: 5px 5px;
+  width: 275px;
+  height: 40px;
   margin: 5px 5px;
 }
 
@@ -296,17 +299,19 @@ header .home-title h2 {
 #skills .tools ul {
   text-transform: uppercase;
   text-decoration: none;
-  text-align: center;
   font-weight: 300;
-  position: center;
 }
 
 #skills .tools li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #152A3E;
   text-decoration: none;
   background: #B4C7D9;
   border: solid black;
-  padding: 5px 5px;
+  width: 275px;
+  height: 40px;
   margin: 5px 5px;
 }
 
@@ -531,6 +536,7 @@ button {
 
 footer p {
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
   font-family: 'Lekton', sans-serif;
   text-align: center;
@@ -688,25 +694,51 @@ footer p {
 
 /*Skills Styles*/
 
-.skills {
+#skills .content-wrapper {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-flow: column wrap;
-  text-decoration: none;
-}
-
-.skills .skills-header {
-  text-align: center;
-}
-
-.skills .content-wrapper ul{
-  flex-direction: row;
-}
-.tools ul {
-  flex-direction: row;
-  margin: 10px 10px;
-}
+  justify-content: space-between;
+  margin-bottom: 20px;
+ }
+ 
+ #skills .dev-skills h3 {
+   text-align: center;
+ }
+ 
+ #skills .dev-skills ul {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   list-style-type: none;
+ }
+ 
+ .dev-skills li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 275px;
+   height: 30px;
+   font-size: .975rem;
+ }
+ 
+ #skills .tools h3 {
+   text-align: center;
+ }
+ 
+ #skills .tools ul {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+   list-style-type: none;
+ }
+ 
+ .tools li {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 275px;
+   height: 30px;
+   font-size: .975rem;
+ }
 
 /*Projects Styles*/
 
@@ -809,19 +841,51 @@ header nav ul li a {
 
 /*Skills Styles*/
 
-.skills ul {
-  width: 85%;
-  list-style-type: none;
+#skills .content-wrapper {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 20px;
 }
-.tools ul {
-  width: 85%;
-  flex-direction: row;
-  margin: 15px 10px;
+
+#skills .dev-skills h3 {
+  text-align: center;
+}
+
+#skills .dev-skills ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   list-style-type: none;
 }
 
+.dev-skills li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  height: 30px;
+  font-size: .975rem;
+}
 
-  
+#skills .tools h3 {
+  text-align: center;
+}
+
+#skills .tools ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.tools li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  height: 30px;
+  font-size: .975rem;
+}
 
   /*Projects Styles*/
 
