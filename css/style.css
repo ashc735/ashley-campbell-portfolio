@@ -676,6 +676,38 @@ footer p {
   }
 /* About Styles */
 
+#about .biography {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+#about .biography figure {
+  width: 95%;
+}
+
+#about .bio-content {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+#about .bio-content h3 {
+  text-align: center;
+  width: 92%;
+}
+
+#about .bio-content p {
+  width: 90%;
+  text-align: justify;
+}
+
+#about span {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
 #about h2 {
   font-size: 1.5rem;
 }
@@ -764,6 +796,10 @@ header nav ul li a {
 
 /*About Styles*/
 
+#about h2 {
+  font-size: 1.5rem;
+}
+
 #about .biography {
   display: flex;
   justify-content: space-between;
@@ -782,7 +818,7 @@ header nav ul li a {
 }
 
 #about .bio-content h3 {
-  text-align: center;
+  text-align: justify;
   width: 92%;
 }
 
