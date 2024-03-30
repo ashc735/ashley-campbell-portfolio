@@ -660,12 +660,22 @@ footer p {
   
   /* Header styles */
 
+  .content-wrapper {
+    width: 95%;
+  }
+
   header nav { 
-    font-size: 1.55rem;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    margin: 0 0 80px 0;
+    width: 100%;
   }
 
   header nav ul {
-    font-size: 1.55rem;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    font-size: 1.75rem;
   }
 
   .home-title h1 {
@@ -771,13 +781,16 @@ footer p {
 
 #projects .portfolio-wrapper {
   display: flex;
+  justify-content: space-around;
+  align-items: stretch;
   flex-flow: row wrap;
-  overflow: auto;
 }
 .portfolio-wrapper .home-portfolio-piece {
-  max-width: 512px;
-  overflow: auto;
-  margin: 0 5px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Footer Styles*/
@@ -941,8 +954,11 @@ header nav ul li a {
 
   /*Projects Styles*/
 
+
 #projects h2 {
     font-size: 1.75rem;
+    margin-top: 25px;
+    padding-top: 25px;
   }
 
 #projects .portfolio-wrapper {
