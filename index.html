@@ -205,7 +205,6 @@
           <div class="contact-container">
             <h3>Message Me</h3>
             <form
-              action="https://api.web3forms.com/submit"
               method="POST"
               id="form">
               <fieldset>
@@ -219,31 +218,32 @@
                   name="subject"
                   value="New Submission from Web3Forms">
                 <input
-                  type="hidden"
-                  name="redirect"
-                  value="https://web3forms.com/success">
+                  type="checkbox"
+                  name="botcheck"
+                  id=""
+                  style="display: none;">
                 <div>
-                  <label for="name">Full Name</label><br />
+                  <label for="name">Full Name</label><br>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     placeholder="John Doe"
                     required>
-                  <br/><br/>
+                  <br><br>
                 </div>
                 <div>
-                  <label for="email">Email Address</label><br />
+                  <label for="email">Email Address</label><br>
                   <input
                     type="email"
                     name="email"
                     id="email"
                     placeholder="you@company.com"
-                    required><br/><br/>
+                    required><br><br>
                 </div>
                 <div>
                   <label for="message">Your Message</label>
-                  <br/>
+                  <br>
                   <textarea
                     rows="5"
                     name="message"
@@ -251,9 +251,10 @@
                     placeholder="Your Message"
                     required>
                   </textarea>
-                  <br/><br/>
+                  <br><br>
                 </div>
                 <button type="submit">Send</button>
+                <div id="result"></div>
               </fieldset>
             </form>
           </div>
