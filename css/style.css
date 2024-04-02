@@ -788,24 +788,12 @@ footer p {
 
 /*Footer Styles*/
 
-footer .content-wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .contact-container {
   width: 95%;
 }
 
-fieldset {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
 
 }
 
@@ -979,6 +967,9 @@ header nav ul li a {
 
 footer {
   min-width: 1200px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 footer h2 {
@@ -986,13 +977,15 @@ footer h2 {
 }
 
 footer .content-wrapper {
-  min-width: 1200px;
+  width: 95%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-footer .contact-container {
-  min-width: 1200px;
-  display: flex;
-  flex-flow: column nowrap;
+.contact-container {
+  width: 95%;
 }
 
 .contact-container h3 {
@@ -1000,45 +993,45 @@ footer .contact-container {
   font-family: 'Lora', sans-serif;
 }
 
-.contact-container form {
-  width: 95%;
-}
-
-fieldset {
+.contact-form {
+  width: 70%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
-  width: 75%;
-  padding: 5px 5px;
-}
-
-input[type=text] {
-  width: 100%;
-  display: inline-block;
-}
-
-input[type=email] {
-  width: 100%;
-  display: inline-block;
-}
-
-textarea {
-  width: 100%;
-  display: inline-block;
+  align-content: stretch;
 }
 
 .contact-follow {
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   font-size: 1.33rem;
 }
 
+.contact-title {
+  font-size: 1.33rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .social-icons ul {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+}
+
 }
 
 
