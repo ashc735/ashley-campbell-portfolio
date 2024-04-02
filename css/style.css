@@ -454,17 +454,19 @@ footer h2 {
   justify-content: center;
 }
 
-.contact-container form {
-  max-width: 350px;
+.contact-form {
+  max-width: 65%;
 }
 
 fieldset {
-  width: 90%
-  text-align: center;
+  width: 90%;
+  text-align: left;
   font-family: 'Montseratt', sans-serif;
   font-size: 18px;
   background: #f0f0f0;
   border:#98999b solid 2px;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
 
 input[type=text] {
@@ -502,7 +504,7 @@ textarea {
   margin: 8px 4px;
   }
 
-  button {
+  input [type=button] {
     background-color: #152A3E;
     border: none;
     font-family: 'Montseratt', sans-serif;
@@ -511,9 +513,10 @@ textarea {
     text-align: center;
     padding: 16px 32px;
     text-decoration: none;
-    margin: 4px 2px;
+    margin: 6px 4px;
     cursor: pointer;
   }
+
 .contact-title {
   font-family: 'Lora', sans-serif;
 }
@@ -883,10 +886,15 @@ header nav ul li a {
 
 /*Skills Styles*/
 
+#skills {
+  display: flex;
+  justify-content: center;
+}
+
 #skills .content-wrapper {
- display: flex;
- justify-content: space-between;
  margin-bottom: 20px;
+ display: flex;
+ flex-flow: row wrap;
 }
 
 .skills-header {
@@ -964,7 +972,6 @@ header nav ul li a {
 
 .home-portfolio-piece h3 {
   font-size: 1.33rem;
-  
 }
 
 /*Footer Styles*/
@@ -974,6 +981,13 @@ footer {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+}
+
+#contact {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 footer h2 {
@@ -999,10 +1013,7 @@ footer .content-wrapper {
 
 .contact-form {
   width: 70%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-content: stretch;
+  
 }
 
 .contact-follow {
