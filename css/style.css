@@ -421,19 +421,19 @@ span {
 /*Contact Styles*/
 
 footer { 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   background: #f0f0f0;
   background-size: cover;
 }
 
 footer #contact {
   color: #152A3E;
+  text-align: center;
 }
 
 footer .content-wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
   width: 95%;
 }
 
@@ -446,25 +446,16 @@ footer h2 {
 
 .contact-container {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .contact-container form {
-  width: 90%;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+  max-width: 350px;
 }
 
 fieldset {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
+  width: 90%
   text-align: center;
   font-family: 'Montseratt', sans-serif;
   font-size: 18px;
@@ -476,18 +467,19 @@ input[type=text] {
   width: 90%;
   font-family: 'Montseratt', sans-serif;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 4px;
   box-sizing: border-box;
   background: #f0f0f0;
   border:#152A3E solid 2px;
   border-radius: 4px;
+  padding-top: 4px;
 }
 
 input[type=email] {
   width: 90%;
   font-family: 'Montseratt', sans-serif;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 8px 4px;
   box-sizing: border-box;
   background: #f0f0f0;
   border:#152A3E solid 2px;
@@ -503,6 +495,7 @@ textarea {
   border-radius: 4px;
   background-color: #f0f0f0;
   resize: none;
+  margin: 8px 4px;
   }
 
   button {
