@@ -204,6 +204,7 @@ header .home-title h2 {
 }
 
 #about .content-wrapper h2 {
+  background: #E7E5CB;
   text-align: center;
   font-size: 1.5rem;
   width: 96%;
@@ -424,6 +425,7 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  text-align: center;
   background: #f0f0f0;
   background-size: cover;
 }
@@ -437,81 +439,30 @@ footer .content-wrapper {
   width: 95%;
 }
 
-footer h2 {
+.content-wrapper h2 {
   font-family: 'Lora', sans-serif;
   text-align: center;
   color:#152A3E;
   background: #f0f0f0;
 }
 
-.contact-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-.contact-container form {
-  max-width: 350px;
-}
-
-fieldset {
-  width: 90%
-  text-align: center;
-  font-family: 'Montseratt', sans-serif;
-  font-size: 18px;
-  background: #f0f0f0;
-  border:#98999b solid 2px;
-}
-
-input[type=text] {
-  width: 90%;
-  font-family: 'Montseratt', sans-serif;
-  padding: 12px 20px;
-  margin: 8px 4px;
-  box-sizing: border-box;
-  background: #f0f0f0;
-  border:#152A3E solid 2px;
-  border-radius: 4px;
-  padding-top: 4px;
-}
-
-input[type=email] {
-  width: 90%;
-  font-family: 'Montseratt', sans-serif;
-  padding: 12px 20px;
-  margin: 8px 4px;
-  box-sizing: border-box;
-  background: #f0f0f0;
-  border:#152A3E solid 2px;
-  border-radius: 4px;
-}
-
-textarea {
-  width: 90%;
-  padding: 12px 20px;
-  font-family: 'Montseratt', sans-serif;
-  box-sizing: border-box;
-  border: 2px solid #152A3E;
-  border-radius: 4px;
-  background-color: #f0f0f0;
-  resize: none;
-  margin: 8px 4px;
-  }
-
-  button {
-    background-color: #152A3E;
-    border: none;
-    font-family: 'Montseratt', sans-serif;
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
 .contact-title {
-  font-family: 'Lora', sans-serif;
+  font-family: 'Monseratt', sans-serif;
+}
+
+.contact-email {
+  font-family: 'Monseratt', sans-serif;
+  text-align: center;
+}
+
+.contact-email p {
+  text-align: center;
+}
+.contact-email a {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .contact-follow {
@@ -788,12 +739,68 @@ footer p {
 
 /*Footer Styles*/
 
+footer {
+  min-width: 768px;
+  display: flex;
+  flex-direction: column;
+}
 
-
-.contact-container {
+.content-wrapper {
   width: 95%;
 }
 
+footer h2 {
+  font-size: 1.75rem;
+}
+
+.contact-me {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-start;
+  gap: 150px;
+}
+
+.contact-email {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.contact-email h3 {
+  font-size: 1.33rem;
+  font-family: 'Lora', sans-serif;
+}
+
+.contact-follow {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.contact-title {
+  font-size: 1.33rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.social-icons ul {
+  display: flex;
+  gap: 15px;
+}
+
+footer p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
 }
 
@@ -968,46 +975,42 @@ header nav ul li a {
 footer {
   min-width: 1200px;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  width: 95%;
 }
 
 footer h2 {
   font-size: 1.75rem;
 }
 
-footer .content-wrapper {
-  width: 95%;
+.contact-me {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: center;
+  text-align: center;
+  align-items: flex-start;
+  gap: 150px;
+}
+
+.contact-email {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
   align-items: center;
 }
 
-.contact-container {
-  width: 95%;
-}
-
-.contact-container h3 {
+.contact-email h3 {
   font-size: 1.33rem;
-  font-family: 'Lora', sans-serif;
-}
-
-.contact-form {
-  width: 70%;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-content: stretch;
   font-family: 'Lora', sans-serif;
 }
 
 .contact-follow {
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
-  font-size: 1.33rem;
+  flex-flow: column nowrap;
 }
 
 .contact-title {
@@ -1017,20 +1020,19 @@ footer .content-wrapper {
 .social-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-flow: column nowrap;
 }
 
 .social-icons ul {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
   gap: 15px;
 }
 
 footer p {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 }
