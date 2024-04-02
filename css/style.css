@@ -451,7 +451,7 @@ footer .content-wrapper {
 }
  
 .contact-title {
-  font-family: 'Lora', sans-serif;
+  font-family: 'Monseratt', sans-serif;
 }
 
 .contact-email a {
@@ -768,7 +768,7 @@ footer h2 {
 
 .contact-email h3 {
   font-size: 1.33rem;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Monseratt', sans-serif;
 }
 
 .contact-follow {
@@ -977,6 +977,7 @@ footer {
   min-width: 1200px;
   display: flex;
   flex-direction: column;
+  font-family: 'Monseratt', sans-serif;
 }
 
 .content-wrapper {
@@ -1008,11 +1009,12 @@ footer h2 {
   justify-content: center;
   flex-flow: column wrap;
   align-items: center;
+  font-family: 'Monseratt', sans-serif;
 }
 
 .contact-email h3 {
   font-size: 1.33rem;
-  font-family: 'Lora', sans-serif;
+  font-family: 'Monseratt', sans-serif;
 }
 
 .contact-follow {
