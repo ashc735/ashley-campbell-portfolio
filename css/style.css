@@ -89,7 +89,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*General Styles*/
+  /*Mobile First Styles*/
+   /*General Styles*/
 
 body {
   background-color: #152A3E;
@@ -264,6 +265,10 @@ header .home-title h2 {
 
 #skills .content-wrapper {
   width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 #skills h3 {
@@ -273,9 +278,7 @@ header .home-title h2 {
 }
 
 .dev-skills {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  
 }
 
 .dev-skills ul {
@@ -283,6 +286,7 @@ header .home-title h2 {
   text-decoration: none;
   font-weight: 300;
   width: 95%;
+  padding: 0;
 }
 
 .dev-skills li {
@@ -300,9 +304,7 @@ header .home-title h2 {
 }
 
 #skills .tools {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+ 
 }
 
 #skills .tools h3 {
@@ -315,6 +317,7 @@ header .home-title h2 {
   text-decoration: none;
   font-weight: 300;
   width: 95%;
+  padding: 0;
 }
 
 #skills .tools li {
@@ -345,8 +348,13 @@ header .home-title h2 {
   font-family: 'Lora', sans-serif;
 }
 
-.portfolio-header {
+#projects .content-wrapper {
+  background: #F7E8E8;
+}
+
+#projects .portfolio-header {
   text-align: center;
+  background: #F7E8E8;
 }
 
 .portfolio-wrapper {
@@ -355,6 +363,7 @@ header .home-title h2 {
   justify-content: center;
   align-items: stretch;
   width: 95%;
+  background: #F7E8E8;
 }
 
 .home-portfolio-piece {
@@ -455,11 +464,15 @@ footer .content-wrapper {
 }
 
 .contact-email a {
+  text-decoration: none;
+}
+.contact-email i {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
+  color:#000;
+  font-size: 2.33rem;
 }
 
 .contact-follow {
@@ -893,10 +906,12 @@ header nav ul li a {
  margin-bottom: 20px;
  display: flex;
  flex-flow: row wrap;
+ justify-content: center;
 }
 
 .skills-header {
   font-size: 1.75rem;
+  width: 100%;
 }
 
 #skills .dev-skills h3 {
