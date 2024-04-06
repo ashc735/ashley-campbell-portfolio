@@ -196,7 +196,8 @@ header .home-title h2 {
   background-size: cover;
   color: #152A3E;
   font-family: 'Lora', sans-serif;
-  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 50px;
   width: 100%;
 }
 
@@ -255,6 +256,8 @@ header .home-title h2 {
   font-family: 'Lora', sans-serif;
   color: #F7E8E8;
   width: 100%;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 #skills .skills-header {
@@ -345,6 +348,8 @@ header .home-title h2 {
   width: 100%;
   color: #152A3E;
   font-family: 'Lora', sans-serif;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 #projects .content-wrapper {
@@ -421,8 +426,8 @@ span {
   font-family: 'Monseratt', sans-serif;
   text-align: center;
   font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
   padding: 4px 4px;
 }
 
@@ -440,6 +445,7 @@ footer {
   text-align: center;
   background: #f0f0f0;
   background-size: cover;
+  padding-top: 40px;
 }
 
 footer #contact {
