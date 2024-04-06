@@ -215,7 +215,6 @@ header .home-title h2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 95%;
 }
 
 #about .biography figure {
@@ -450,6 +449,11 @@ footer #contact {
 
 footer .content-wrapper {
   width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-align: center;
+  align-items: center;
 }
 
 .content-wrapper h2 {
@@ -497,6 +501,8 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   list-style-type: none;
+  gap: 22px;
+  padding: 0;
 }
 
 .social-icons ul li {
