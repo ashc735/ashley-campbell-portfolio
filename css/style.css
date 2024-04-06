@@ -277,11 +277,10 @@ header .home-title h2 {
   text-align: center;
   color: #EEEFDA;
   font-family: 'Montseratt', sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.dev-skills {
-  
-}
 
 .dev-skills ul {
   text-transform: uppercase;
@@ -302,16 +301,14 @@ header .home-title h2 {
   border: solid #152A3E;
   width: 275px;
   height: 40px;
-  gap: 2px;
-}
-
-#skills .tools {
- 
+  gap: 5px;
 }
 
 #skills .tools h3 {
   text-align: center;
   color: #EEEFDA;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #skills .tools ul {
@@ -326,7 +323,7 @@ header .home-title h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2px;
+  gap: 5px;
   text-align: center;
   color: #152A3E;
   text-decoration: none;
@@ -694,56 +691,52 @@ footer p {
 
 /*Skills Styles*/
 
-#skills .content-wrapper {
+#skills .dev-skills {
+  text-align: center;
+}
+#skills .dev-skills ul {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
- }
- 
- #skills .dev-skills h3 {
-   text-align: center;
- }
- 
- #skills .dev-skills ul {
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: center;
-   list-style-type: none;
- }
- 
- .dev-skills li {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 275px;
-   height: 30px;
-   font-size: .975rem;
- }
- 
- #skills .tools h3 {
-   text-align: center;
- }
- 
- #skills .tools ul {
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: center;
-   list-style-type: none;
- }
- 
- .tools li {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 275px;
-   height: 30px;
-   font-size: .975rem;
- }
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+  gap: 5px;
+}
+
+.dev-skills li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  height: 40px;
+  font-size: .975rem;
+}
+
+#skills .tools h3 {
+  text-align: center;
+}
+
+#skills .tools ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+  gap: 5px;
+}
+
+.tools li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  height: 40px;
+  font-size: .975rem;
+}
 
 /*Projects Styles*/
 
 #projects h2 {
   font-size: 1.5rem;
+  padding-bottom: 20px;;
 }
 
 #projects .portfolio-wrapper {
@@ -977,6 +970,7 @@ header nav ul li a {
     font-size: 1.75rem;
     margin-top: 25px;
     padding-top: 25px;
+    padding-bottom: 20px;
   }
 
 #projects .portfolio-wrapper {
