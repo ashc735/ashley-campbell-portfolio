@@ -859,12 +859,9 @@ header nav ul li a {
 
 /*About Styles*/
 
-#about .home-title h1 {
-  font-size: 2.33rem;
-}
-
 #about h2 {
   font-size: 1.9rem;
+  padding-bottom: 15px;
 }
 
 #about .biography {
@@ -887,17 +884,21 @@ header nav ul li a {
 #about .bio-content h3 {
   text-align: center;
   width: 92%;
+  padding-top: 0;
+  padding-bottom: 30px;
 }
 
 #about .bio-content p {
   width: 90%;
   text-align: left;
   word-spacing: normal;
+  padding-bottom: 15px;
 }
 
 #about span {
   text-align: center;
   font-size: 1.25rem;
+  padding-top: 15px;
 }
 
 /*Skills Styles*/
