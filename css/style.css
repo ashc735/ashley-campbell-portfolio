@@ -89,7 +89,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*General Styles*/
+  /*Mobile First Styles*/
+   /*General Styles*/
 
 body {
   background-color: #152A3E;
@@ -213,7 +214,6 @@ header .home-title h2 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 95%;
 }
 
 #about .biography figure {
